@@ -111,4 +111,5 @@ To use the dependencies in your other projects, create the dependency in you  **
 We have seen how to create a custom self hosted maven repository using Reposilite. Reposilite is really lightweight but powerful and I would encourage you to visit their documentation page for further configuration information.
 
 https://stackedit.io/app#
+    
 https://www.linkedin.com/pulse/custom-self-hosted-maven-repository-rupesh-kumar
