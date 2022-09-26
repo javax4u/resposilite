@@ -106,10 +106,56 @@ To use the dependencies in your other projects, create the dependency in you  **
 
 … and voila, you have your self hosted custom maven repository!!!
 
-# Conclusion
+## FAQ
+
+### How to allow port before starting reposilite
+```
+sudo ufw allow 2222
+```
+Output
+```
+Rule added
+Rule added (v6)
+```
+### How to create first user in reposilite
+
+```
+token-generate --secret=admin admin m
+```
+
+### Blocked mirror for repositories: [reposilite-repository-releases  default, releases+snapshots)]
+
+Could not transfer artifact github:example-package-1:pom:1.2-SNAPSHOT-sources from/to maven-default-http-blocker (http://0.0.0.0/): Blocked mirror for repositories: [reposilite-repository-releases (http://www6c.virtualdoxx.com:8082/releases, default, releases+snapshots)]
+```
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0"  
+  xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+  xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0  
+ http://maven.apache.org/xsd/settings-1.0.0.xsd">  
+  
+    <mirrors>  
+        <mirror>  
+            <id>internal-repository</id>  
+            <name>Maven Repository Manager running on https://repo1.maven.org/maven2</name>  
+            <url>https://repo1.maven.org/maven2</url>  
+            <mirrorOf>*</mirrorOf>  
+        </mirror>  
+        <mirror>  
+            <id>other-mirror</id>  
+            <mirrorOf>central</mirrorOf>  
+            <name>www6c Mirror Repository</name>  
+            <url>http://www6c.virtualdoxx.com:8082/releases</url>  
+        </mirror>  
+    </mirrors>  
+</settings>
+```
+run command
+```
+mvn -U clean install --settings settings.xml
+```
+## Conclusion
 
 We have seen how to create a custom self hosted maven repository using Reposilite. Reposilite is really lightweight but powerful and I would encourage you to visit their documentation page for further configuration information.
 
 https://stackedit.io/app#
-    
-https://www.linkedin.com/pulse/custom-self-hosted-maven-repository-rupesh-kumar
+
+[LinkedIn Link Article Link](https://www.linkedin.com/pulse/custom-self-hosted-maven-repository-rupesh-kumar)
