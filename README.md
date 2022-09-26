@@ -1,3 +1,12 @@
+F & Q
+- [ ] Everything is fine but i am not able to browse in chrom. (reposilite)
+- [ ] How tocreate user in reposilite
+- [ ] How to access reposilite console
+- [ ] How tolook at server log
+- [ ] How will you upload others jars to repository-lite
+- [ ] How to install reposilitory-lite as servive
+
+
 
 Recently, I needed to have a custom self-hosted maven repository for .jar libraries that I had and are not in the Maven Repository or any other public repository. I had to manually install the library to my local repo using the following maven command:
 
