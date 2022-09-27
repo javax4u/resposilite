@@ -1,3 +1,8 @@
+### Flow diagram 
+![Image](https://user-images.githubusercontent.com/66588814/192434879-2bb5a9c8-c534-4b6a-9d28-37e7152b415a.png)
+###
+
+
 F & Q
 - [ ] Everything is fine but i am not able to browse in chrom. (reposilite)
 - [ ] How tocreate user in reposilite
