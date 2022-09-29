@@ -1,3 +1,18 @@
+### Flow diagram 
+![Image](https://user-images.githubusercontent.com/66588814/192434879-2bb5a9c8-c534-4b6a-9d28-37e7152b415a.png)
+###
+
+###
+F & Q
+- [ ] Everything is fine but i am not able to browse in chrom. (reposilite)
+- [ ] How tocreate user in reposilite
+- [ ] How to access reposilite console
+- [ ] How tolook at server log
+- [ ] How will you upload others jars to repository-lite
+- [ ] How to install reposilitory-lite as servive
+
+###
+
 
 Recently, I needed to have a custom self-hosted maven repository for .jar libraries that I had and are not in the Maven Repository or any other public repository. I had to manually install the library to my local repo using the following maven command:
 
@@ -159,3 +174,6 @@ We have seen how to create a custom self hosted maven repository using Reposilit
 https://stackedit.io/app#
 
 [LinkedIn Link Article Link](https://www.linkedin.com/pulse/custom-self-hosted-maven-repository-rupesh-kumar)
+    
+    
+### installation manaul https://reposilite.com/guide/manual
